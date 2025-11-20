@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EDEBEE;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #FAF6F6;
+  /* color: white; */
+  padding: 20px 0;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+header p {
+  margin-top: 6px;
+  color: #555;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-form {
+  display: none;
+}
+
+#book-form.active-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+#library {
+  /* allow the library area to span the full viewport width even inside .container */
+  width: 100vw;
+}
+
+#library table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+/* center cell content */
+#library th,
+#library td {
+  text-align: center;
+  padding: 8px;
+}
+
+#library .delete-btn {
+  padding: 5px 10px;
+  background-color: #E53935;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: background-color 0.3s ease;
+}
+
+#library .delete-btn:hover {
+  background-color: #C62828;
+}
+
+#library .delete-btn:active {
+  background-color: #B71C1C;
+}
+
+#new-book-btn {
+  padding: 10px 15px;
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#new-book-btn:hover {
+  background-color: #3949AB;
+}
+
+#new-book-btn:active {
+  background-color: #283593;
+}
+
+#book-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#book-form button {
+  padding: 10px;
+  background-color: #43A047;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: background-color 0.3s ease;
+  width: 120px;
+}
+
+#book-form button:hover {
+  background-color: #388E3C;
+}
+
+#book-form button:active {
+  background-color: #2E7D32;
+}
